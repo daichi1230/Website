@@ -1,0 +1,47 @@
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container>div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* Horizontally center */
+    align-items: center;
+    /* Vertically center */
+    height: 100vh;
+    /* Optional: Adjust the height as needed */
+}
+
+.container-space {
+    display: flex;
+        justify-content: space-between;
+        /* To space elements equally */
+        align-items: center;
+        /* To vertically center elements */
+}
+
+.left-content {
+    /* Styles for the left content */
+    display: flex;
+}
+
+.right-content {
+    /* Styles for the right content container */
+    display: flex;
+    /* Nested flexbox */
+}
+
+ul {
+    /* Style unordered lists */
+    list-style-type: none;
+    /* Remove bullet points */
+}
