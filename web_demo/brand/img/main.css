@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+body {
+    color: #2D2D2D;
+    font-family: 'Crimson Text', serif;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: #2D2D2D;
+    text-decoration: none;
+}
+
+/* mainとfooterのコンテンツ幅を指定 */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+.site-title {
+    width: 110px;
+    line-height: 1px;
+    margin-right: 50px;
+}
+.site-title a{
+    display: block;
+}
+.section-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+.section-title-en {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+/*mainvisual */
+#mainvisual {
+    width: 90vw;
+    margin: 4% auto 0;
+}
+/*Header*/
+#header {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    margin: 0 auto 30px auto;
+}
+#header ul {
+    display: flex;
+}
+#header li {
+    font-size: 0.875rem;
+    margin-right: 30px;
+}
+/*
+最後のliにはmargin-rightをつけない
+*/
+#header li:last-child {
+    margin-right: 0;
+}
+
+/*Concept, Work*/
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.content .img {
+    width: 50%;
+}
+.content .text {
+    width: 50%;
+    padding: 0 7%;
+}
+
+/*Footer*/
+#footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    padding: 20px 0;
+}
+#footer .logo{
+    width: 110px;
+}
+
+/*SP*/
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 1.25rem;
+    }
+    /*Mainvisual*/
+    #mainvisual {
+        width: 100%;
+        margin: 0;
+    }
+    /*heightをvhで指定することで、画面の高さを基準にした高さになる*/
+    #mainvisual img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    /*Header*/
+    }
+    #header {
+        width: 100%;
+        padding: 20px 10px;
+    }
+    /*Concept Work*/
+    /*workはそのまま画像とテキストを縦に並べると、テキスト→画像の順番になるため、「flex-direction: colum-reverse;」で逆順にする*/
+    #work {
+        flex-direction: column-reverse;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content .img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .content .text {
+        width: 100%;
+        padding: 0;
+    }
+}
