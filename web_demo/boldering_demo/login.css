@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+body {
+    background-color: aliceblue;
+    color: #000;
+    align-items: center;
+}
+
+/* ヘッダー */
+#header {
+    display: flex;
+    justify-content: center;
+}
+#header #logo {
+    height: 80px;
+    width: 80%;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: center;
+}
+/*Main*/
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#main .wrapper #sub-title {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#main .wrapper input {
+    width: 50%;
+    height: 1.5rem;
+    margin-top: 10px;
+    display: inline-block;
+}
+#main .wrapper .link {
+    margin-top: 10px;
+    color: #12b5e7;
+}
+a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #2a2a2a;
+    align-items: center;
+}
+#changePass {
+    display: flex;
+    text-align: right;
+}
+#footer {
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 1.5rem;
+}
+#login-btn {
+    border-color: #04895c;
+    color: rgb(4, 137, 92);
+    text-align: center;
+    margin-top: 20px;
+}
+#login-btn:hover {
+    background-color: rgb(125, 237, 199);
+    color: #fff;
+}
+#google-login {
+    border-color: #074cfc;
+    color: #074cfc;
+    text-align: center;
+    margin-top: 20px;
+    width: 50%;
+    height: 1.5rem;
+}
+#google-login:hover {
+    background-color: #5b86f3;
+    color: #fff;
+}
+#midle-body {
+    border-bottom: #000;
+    width: 100%;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
